@@ -1,0 +1,31 @@
+{
+  "name": "homework31",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-pug": "^5.0.0",
+    "jquery": "^3.7.0",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.2",
+    "sass": "^1.70.0",
+    "yarn": "^1.22.21"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "browser-sync": "^3.0.2",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^6.0.3",
+    "gulp": "^4.0.2",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sort-css-media-queries": "^2.2.0"
+  }
+}

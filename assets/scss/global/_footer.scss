@@ -1,0 +1,41 @@
+.footer {
+  color: $white;
+  background: $blue;
+  padding: 50px 0;
+
+  &__wrapper {
+    @include center($desktop);
+  }
+
+  &__title {
+    @include size-height(1.31rem, 19px);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include size-height(0.81rem, 12px);
+  }
+
+  @include desktop {
+    text-align: center;
+  }
+
+  @include tablet-landscape {
+    &__wrapper {
+      max-width: $width-tablet-landscape;
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      max-width: $width-tablet;
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      max-width: $width-mobile;
+    }
+  }
+}

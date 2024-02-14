@@ -1,0 +1,90 @@
+.project {
+  background: $blue;
+  padding: 100px 0;
+
+  &__wrapper {
+    @include center($desktop);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__img {
+    @include width-height(50px, 50px);
+    margin-right: 20px;
+  }
+
+  &__text {
+    color: $white;
+  }
+
+  &__title {
+    @include size-height(1.31rem, 19px);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    @include size-height(1rem, 15px);
+    width: 71px;
+  }
+
+  @include tablet-landscape {
+    &__wrapper {
+      max-width: $width-tablet-landscape;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    &__img {
+      @include width-height(50px, 50px);
+      margin-right: 20px;
+    }
+
+    &__item {
+      justify-content: center;
+      width: calc(33% - 60px);
+      margin: 10px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      height: 19px;
+    }
+
+    &__description {
+      @include width-height(71px, 15px);
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      max-width: $width-tablet;
+    }
+
+    &__item {
+      width: unset;
+    }
+
+    &__img {
+      @include width-height(45px, 45px);
+    }
+
+  }
+
+  @include mobile {
+    &__wrapper {
+      max-width: $width-mobile;
+    }
+  }
+}
